@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
+import { Container, Row, Col } from "react-bootstrap";
 
-function App(): JSX.Element {
+export function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
@@ -13,6 +14,13 @@ function App(): JSX.Element {
             </p>
             <p>Lauren Pham!</p>
             <p>Hello World</p>
+            <h2>HTML and CSS</h2>
+            <Container>
+                <Row>
+                    <Col>First Col</Col>
+                    <Col> Second Col </Col>
+                </Row>
+            </Container>
         </div>
     );
 }
