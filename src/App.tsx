@@ -23,7 +23,7 @@ export function App(): JSX.Element {
                 <Row>
                     <Col>
                         <img
-                            src="Megamoid2.jpg"
+                            src="src/Megamoid2.jpg"
                             alt="This is a picture of Megamind from the hit dreamworks movie Megamind"
                         />{" "}
                     </Col>
