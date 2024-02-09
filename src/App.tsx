@@ -20,6 +20,15 @@ export function App(): JSX.Element {
                     <Col>First Col</Col>
                     <Col> Second Col </Col>
                 </Row>
+                <Row>
+                    <Col>
+                        <img
+                            src="Megamoid2.jpg"
+                            alt="This is a picture of Megamind from the hit dreamworks movie Megamind"
+                        />{" "}
+                    </Col>
+                    <Col> Second Col </Col>
+                </Row>
             </Container>
         </div>
     );
