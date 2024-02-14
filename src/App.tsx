@@ -39,12 +39,26 @@ export function App(): JSX.Element {
                 </Row>
                 <Row>
                     <Col>
-                        <div style={{ backgroundColor: "red" }}>
+                        <div
+                            style={{
+                                backgroundColor: "red",
+                                maxHeight: "200",
+                                maxWidth: "200",
+                                padding: "1px"
+                            }}
+                        >
                             <span style={{ color: "red" }}> Rectangle 1 </span>
                         </div>
                     </Col>
                     <Col>
-                        <div style={{ backgroundColor: "red" }}>
+                        <div
+                            style={{
+                                backgroundColor: "red",
+                                maxHeight: "200",
+                                maxWidth: "200",
+                                padding: "1px"
+                            }}
+                        >
                             <span style={{ color: "red" }}> Rectangle 2 </span>
                         </div>
                     </Col>
