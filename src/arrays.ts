@@ -63,8 +63,10 @@ export const shoutIfExclaiming = (messages: string[]): string[] => {
             } else if (!message.endsWith("?")) {
                 return message;
             }
+            // If the message ends with "?", return an empty string
+            return "";
         })
-        .filter(Boolean);
+        .filter((message) => message !== ""); //get rid of empty strings
 };
 
 /**
