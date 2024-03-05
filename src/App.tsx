@@ -1,16 +1,11 @@
 import React from "react";
 import "./App.css";
-<<<<<<< HEAD
-import Megamoid2 from "./Megamoid2.png";
-import { Container, Row, Col, Button } from "react-bootstrap";
-=======
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { StartAttempt } from "./components/StartAttempt";
 import { TwoDice } from "./components/TwoDice";
 import { CycleHoliday } from "./components/CycleHoliday";
 import { Counter } from "./components/Counter";
->>>>>>> upstream/task-state
 
 export function App(): JSX.Element {
     return (
@@ -18,73 +13,6 @@ export function App(): JSX.Element {
             <header className="App-header">
                 UD CISC275 with React Hooks and TypeScript
             </header>
-<<<<<<< HEAD
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
-            </p>
-            <p>Lauren Pham!</p>
-            <p>Hello World</p>
-            <h2>HTML and CSS</h2>
-            <Container>
-                <Row>
-                    <Col>First Col</Col>
-                    <Col> Second Col </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <img
-                            src={Megamoid2}
-                            alt="This is a picture of Megamind from the hit dreamworks movie Megamind"
-                        />{" "}
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Button onClick={() => console.log("Hello World!")}>
-                            {" "}
-                            Log Hello World
-                        </Button>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div
-                            style={{
-                                backgroundColor: "red",
-                                maxHeight: "200",
-                                maxWidth: "200",
-                                padding: "1px"
-                            }}
-                        >
-                            <span style={{ color: "red" }}> Rectangle 1 </span>
-                        </div>
-                    </Col>
-                    <Col>
-                        <div
-                            style={{
-                                backgroundColor: "red",
-                                maxHeight: "200",
-                                maxWidth: "200",
-                                padding: "1px"
-                            }}
-                        >
-                            <span style={{ color: "red" }}> Rectangle 2 </span>
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <ol>
-                            <li>One</li>
-                            <li>Two</li>
-                            <li>Three</li>
-                            <li>Four</li>
-                        </ol>
-                    </Col>
-                </Row>
-            </Container>
-=======
             <hr></hr>
             <Counter></Counter>
             <hr />
@@ -97,7 +25,6 @@ export function App(): JSX.Element {
             <ChangeType></ChangeType>
             <hr />
             <CycleHoliday></CycleHoliday>
->>>>>>> upstream/task-state
         </div>
     );
 }
