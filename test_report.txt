@@ -10,8 +10,6 @@ PASS src/components/TwoDice.test.tsx
 PASS src/functions.test.ts
 PASS src/components/ChangeType.test.tsx
 PASS src/components/CycleHoliday.test.tsx
-PASS src/components/Counter.test.tsx
-PASS src/components/RevealAnswer.test.tsx
 FAIL src/HtmlCss.test.tsx
   ● Some HTML Elements are added. › There is a header
 
@@ -193,13 +191,13 @@ FAIL src/HtmlCss.test.tsx
             [36m<span[39m
               [33mdata-testid[39m=[32m"left-die"[39m
             [36m>[39m
+              [36m<p>[39m
+                [0m2[0m
+              [36m</p>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"btn-group"[39m
                 [33mrole[39m=[32m"group"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0m2[0m
-                [36m</p>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"btn btn-primary"[39m
                   [33mtype[39m=[32m"button"[39m
@@ -211,13 +209,14 @@ FAIL src/HtmlCss.test.tsx
             [36m<span[39m
               [33mdata-testid[39m=[32m"right-die"[39m
             [36m>[39m
+              [36m<p>[39m
+                [0m1[0m
+                [0m [0m
+              [36m</p>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"btn-group"[39m
                 [33mrole[39m=[32m"group"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0m1[0m
-                [36m</p>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"btn btn-primary"[39m
                   [33mtype[39m=[32m"button"[39m
@@ -254,9 +253,11 @@ FAIL src/HtmlCss.test.tsx
             [36m>[39m
               [0m Advance By Year [0m
             [36m</button>[39m
-            [0mHoliday: [0m
-            [0m🍀[0m
-            [0m [0m
+            [36m<p>[39m
+              [0mHoliday: [0m
+              [0m🍀[0m
+              [0m [0m
+            [36m</p>[39m
           [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
@@ -456,13 +457,13 @@ FAIL src/HtmlCss.test.tsx
             [36m<span[39m
               [33mdata-testid[39m=[32m"left-die"[39m
             [36m>[39m
+              [36m<p>[39m
+                [0m2[0m
+              [36m</p>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"btn-group"[39m
                 [33mrole[39m=[32m"group"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0m2[0m
-                [36m</p>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"btn btn-primary"[39m
                   [33mtype[39m=[32m"button"[39m
@@ -474,13 +475,14 @@ FAIL src/HtmlCss.test.tsx
             [36m<span[39m
               [33mdata-testid[39m=[32m"right-die"[39m
             [36m>[39m
+              [36m<p>[39m
+                [0m1[0m
+                [0m [0m
+              [36m</p>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"btn-group"[39m
                 [33mrole[39m=[32m"group"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0m1[0m
-                [36m</p>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"btn btn-primary"[39m
                   [33mtype[39m=[32m"button"[39m
@@ -517,9 +519,11 @@ FAIL src/HtmlCss.test.tsx
             [36m>[39m
               [0m Advance By Year [0m
             [36m</button>[39m
-            [0mHoliday: [0m
-            [0m🍀[0m
-            [0m [0m
+            [36m<p>[39m
+              [0mHoliday: [0m
+              [0m🍀[0m
+              [0m [0m
+            [36m</p>[39m
           [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
@@ -719,13 +723,13 @@ FAIL src/HtmlCss.test.tsx
             [36m<span[39m
               [33mdata-testid[39m=[32m"left-die"[39m
             [36m>[39m
+              [36m<p>[39m
+                [0m2[0m
+              [36m</p>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"btn-group"[39m
                 [33mrole[39m=[32m"group"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0m2[0m
-                [36m</p>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"btn btn-primary"[39m
                   [33mtype[39m=[32m"button"[39m
@@ -737,13 +741,14 @@ FAIL src/HtmlCss.test.tsx
             [36m<span[39m
               [33mdata-testid[39m=[32m"right-die"[39m
             [36m>[39m
+              [36m<p>[39m
+                [0m1[0m
+                [0m [0m
+              [36m</p>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"btn-group"[39m
                 [33mrole[39m=[32m"group"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0m1[0m
-                [36m</p>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"btn btn-primary"[39m
                   [33mtype[39m=[32m"button"[39m
@@ -780,9 +785,11 @@ FAIL src/HtmlCss.test.tsx
             [36m>[39m
               [0m Advance By Year [0m
             [36m</button>[39m
-            [0mHoliday: [0m
-            [0m🍀[0m
-            [0m [0m
+            [36m<p>[39m
+              [0mHoliday: [0m
+              [0m🍀[0m
+              [0m [0m
+            [36m</p>[39m
           [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
@@ -982,13 +989,13 @@ FAIL src/HtmlCss.test.tsx
             [36m<span[39m
               [33mdata-testid[39m=[32m"left-die"[39m
             [36m>[39m
+              [36m<p>[39m
+                [0m2[0m
+              [36m</p>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"btn-group"[39m
                 [33mrole[39m=[32m"group"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0m2[0m
-                [36m</p>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"btn btn-primary"[39m
                   [33mtype[39m=[32m"button"[39m
@@ -1000,13 +1007,14 @@ FAIL src/HtmlCss.test.tsx
             [36m<span[39m
               [33mdata-testid[39m=[32m"right-die"[39m
             [36m>[39m
+              [36m<p>[39m
+                [0m1[0m
+                [0m [0m
+              [36m</p>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"btn-group"[39m
                 [33mrole[39m=[32m"group"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0m1[0m
-                [36m</p>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"btn btn-primary"[39m
                   [33mtype[39m=[32m"button"[39m
@@ -1043,9 +1051,11 @@ FAIL src/HtmlCss.test.tsx
             [36m>[39m
               [0m Advance By Year [0m
             [36m</button>[39m
-            [0mHoliday: [0m
-            [0m🍀[0m
-            [0m [0m
+            [36m<p>[39m
+              [0mHoliday: [0m
+              [0m🍀[0m
+              [0m [0m
+            [36m</p>[39m
           [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
@@ -1245,13 +1255,13 @@ FAIL src/HtmlCss.test.tsx
             [36m<span[39m
               [33mdata-testid[39m=[32m"left-die"[39m
             [36m>[39m
+              [36m<p>[39m
+                [0m2[0m
+              [36m</p>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"btn-group"[39m
                 [33mrole[39m=[32m"group"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0m2[0m
-                [36m</p>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"btn btn-primary"[39m
                   [33mtype[39m=[32m"button"[39m
@@ -1263,13 +1273,14 @@ FAIL src/HtmlCss.test.tsx
             [36m<span[39m
               [33mdata-testid[39m=[32m"right-die"[39m
             [36m>[39m
+              [36m<p>[39m
+                [0m1[0m
+                [0m [0m
+              [36m</p>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"btn-group"[39m
                 [33mrole[39m=[32m"group"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0m1[0m
-                [36m</p>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"btn btn-primary"[39m
                   [33mtype[39m=[32m"button"[39m
@@ -1306,9 +1317,11 @@ FAIL src/HtmlCss.test.tsx
             [36m>[39m
               [0m Advance By Year [0m
             [36m</button>[39m
-            [0mHoliday: [0m
-            [0m🍀[0m
-            [0m [0m
+            [36m<p>[39m
+              [0mHoliday: [0m
+              [0m🍀[0m
+              [0m [0m
+            [36m</p>[39m
           [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
@@ -1328,6 +1341,8 @@ FAIL src/HtmlCss.test.tsx
       at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
       at Object.<anonymous> (src/HtmlCss.test.tsx:56:31)
 
+PASS src/components/Counter.test.tsx
+PASS src/components/RevealAnswer.test.tsx
 FAIL src/text.test.tsx
   ● renders the text 'Hello World' somewhere
 
@@ -1398,13 +1413,13 @@ FAIL src/text.test.tsx
             [36m<span[39m
               [33mdata-testid[39m=[32m"left-die"[39m
             [36m>[39m
+              [36m<p>[39m
+                [0m2[0m
+              [36m</p>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"btn-group"[39m
                 [33mrole[39m=[32m"group"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0m2[0m
-                [36m</p>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"btn btn-primary"[39m
                   [33mtype[39m=[32m"button"[39m
@@ -1416,13 +1431,14 @@ FAIL src/text.test.tsx
             [36m<span[39m
               [33mdata-testid[39m=[32m"right-die"[39m
             [36m>[39m
+              [36m<p>[39m
+                [0m1[0m
+                [0m [0m
+              [36m</p>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"btn-group"[39m
                 [33mrole[39m=[32m"group"[39m
               [36m>[39m
-                [36m<p>[39m
-                  [0m1[0m
-                [36m</p>[39m
                 [36m<button[39m
                   [33mclass[39m=[32m"btn btn-primary"[39m
                   [33mtype[39m=[32m"button"[39m
@@ -1459,9 +1475,11 @@ FAIL src/text.test.tsx
             [36m>[39m
               [0m Advance By Year [0m
             [36m</button>[39m
-            [0mHoliday: [0m
-            [0m🍀[0m
-            [0m [0m
+            [36m<p>[39m
+              [0mHoliday: [0m
+              [0m🍀[0m
+              [0m [0m
+            [36m</p>[39m
           [36m</div>[39m
         [36m</div>[39m
       [36m</div>[39m
@@ -1506,5 +1524,5 @@ All files          |   97.76 |    95.09 |     100 |   98.18 |
 Test Suites: 2 failed, 11 passed, 13 total
 Tests:       6 failed, 95 passed, 101 total
 Snapshots:   0 total
-Time:        6.054 s
+Time:        6.025 s
 Ran all test suites.
