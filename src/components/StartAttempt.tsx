@@ -6,8 +6,12 @@ export function StartAttempt(): JSX.Element {
     const [quizProgress, setQuizProgress] = useState(false);
     //create 3 functions to handle state
     function startQuiz() {
-        setQuizProgress(true);
-        setValue(value - 1);
+        if (value > 0) {
+            setQuizProgress(true);
+            setValue(value - 1);
+        } else if (value == 0) {
+            setQuizProgress(false);
+        }
     }
     function stopQuiz() {
         setQuizProgress(false);
@@ -17,12 +21,17 @@ export function StartAttempt(): JSX.Element {
     }
     return (
         <span>
-            <Button onClick={startQuiz}>Start Quiz</Button>
-            to {value}.{setQuizProgress(true)}
-            <Button onClick={stopQuiz}> Stop Quiz</Button>
-            {quizProgress === true && value === 0}
-            <Button onClick={mulligan}>Mulligan</Button>
-            to {value}.
+            <p>{value}</p>
+            <Button onClick={startQuiz} disabled={quizProgress || value === 0}>
+                Start Quiz
+            </Button>
+            <Button onClick={stopQuiz} disabled={!quizProgress}>
+                {" "}
+                Stop Quiz{" "}
+            </Button>
+            <Button onClick={mulligan} disabled={quizProgress}>
+                Mulligan
+            </Button>
         </span>
     );
 }

@@ -1,5 +1,6 @@
+import { getByTestId } from "@testing-library/react";
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+import { Button, ButtonGroup } from "react-bootstrap";
 
 /**
  * Here is a helper function you *must* use to "roll" your die.
@@ -12,5 +13,37 @@ export function d6(): number {
 }
 
 export function TwoDice(): JSX.Element {
-    return <div>Two Dice</div>;
+    const [rightNum, setRightNum] = useState<number>(d6());
+    const [leftNum, setLeftNum] = useState<number>(d6());
+    function rollLeftDie(): void {
+        setLeftNum(d6());
+        if (rightNum === leftNum) {
+            setLeftNum(d6());
+        }
+    }
+    function rollRightDie(): void {
+        setRightNum(d6());
+    }
+
+    const isWin = leftNum === rightNum;
+    const isLose = leftNum === 1 && rightNum === 1;
+
+    return (
+        <div>
+            <span data-testid="left-die">
+                <ButtonGroup>
+                    <p>{leftNum}</p>
+                    <Button onClick={rollLeftDie}>Roll Left</Button>
+                </ButtonGroup>
+            </span>
+            <span data-testid="right-die">
+                <ButtonGroup>
+                    <p>{rightNum}</p>
+                    <Button onClick={rollRightDie}>Roll Right</Button>
+                </ButtonGroup>
+            </span>
+            {isLose && <p>Lose!</p>}
+            {isWin && <p>Win!</p>}
+        </div>
+    );
 }
