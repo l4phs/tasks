@@ -28,14 +28,14 @@ export function TwoDice(): JSX.Element {
     return (
         <div>
             <span data-testid="left-die">
+                <p>{leftNum}</p>
                 <ButtonGroup>
-                    <p>{leftNum}</p>
                     <Button onClick={rollLeftDie}>Roll Left</Button>
                 </ButtonGroup>
             </span>
             <span data-testid="right-die">
+                <p>{rightNum} </p>
                 <ButtonGroup>
-                    <p>{rightNum}</p>
                     <Button onClick={rollRightDie}>Roll Right</Button>
                 </ButtonGroup>
             </span>

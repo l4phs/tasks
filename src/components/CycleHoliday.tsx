@@ -39,7 +39,7 @@ export function CycleHoliday(): JSX.Element {
             {" "}
             <Button onClick={advanceAlpha}> Advance By Alphabet </Button>
             <Button onClick={advanceYear}> Advance By Year </Button>
-            Holiday: {holiday}{" "}
+            <p>Holiday: {holiday} </p>
         </div>
     );
 }
