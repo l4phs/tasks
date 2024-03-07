@@ -12,7 +12,7 @@ const PEOPLE = [
 
 //no need for interface because it is defined in the return function
 export function ChooseTeam(): JSX.Element {
-    const [allOptions, setAllOptions] = useState<string[]>(PEOPLE);
+    const [allOptions] = useState<string[]>(PEOPLE);
     const [team, setTeam] = useState<string[]>([]);
 
     //need to deep copy
