@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { Last } from "react-bootstrap/esm/PageItem";
+//import { Last } from "react-bootstrap/esm/PageItem";
 
 export function GiveAttempts(): JSX.Element {
     const [attempts, setAttempts] = useState<number>(3);
