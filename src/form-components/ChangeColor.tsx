@@ -20,6 +20,34 @@ export function ChangeColor(): JSX.Element {
     return (
         <div>
             <h3>Change Color</h3>
+            {colors.map((color) => (
+                <div key={color} className="form-check-inline">
+                    <input
+                        type="radio"
+                        id={`color-${color}`}
+                        name="color"
+                        value={color}
+                        checked={selectedColor === color}
+                        onChange={() => handleColorChange(color)}
+                        className="form-check-input"
+                    />
+                    <label
+                        htmlFor={`color-${color}`}
+                        style={{ backgroundColor: color }}
+                    >
+                        {color}
+                    </label>
+                </div>
+            ))}
+            <div>
+                You have chosen{" "}
+                <span
+                    data-testid="colored-box"
+                    style={{ backgroundColor: selectedColor }}
+                >
+                    {selectedColor}
+                </span>
+            </div>
         </div>
     );
 }
