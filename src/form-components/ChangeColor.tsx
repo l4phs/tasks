@@ -24,6 +24,7 @@ export function ChangeColor(): JSX.Element {
             {colors.map((color) => (
                 <div key={color} className="form-check-inline">
                     <Form.Check
+                        inline
                         type="radio"
                         id={`color-${color}`}
                         name="color"
