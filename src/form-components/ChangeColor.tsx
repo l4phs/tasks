@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import { Form } from "react-bootstrap";
 //need to update
 export function ChangeColor(): JSX.Element {
-    const [selectedColor, setSelectedColor] = useState("red"); // Set the initial color
+    const [selectedColor, setSelectedColor] = useState<string>("red"); // Set the initial color
 
     const colors = [
         "red",
@@ -22,7 +23,7 @@ export function ChangeColor(): JSX.Element {
             <h3>Change Color</h3>
             {colors.map((color) => (
                 <div key={color} className="form-check-inline">
-                    <input
+                    <Form.Check
                         type="radio"
                         id={`color-${color}`}
                         name="color"
